@@ -66,7 +66,7 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
 
 - Request Method: GET
 
-- Request URI: https://bdt-defi-partner-api.herokuapp.com/api/partner/getUser/{emailAddress}
+- Request URI: https://bdt-defi-partner-api.herokuapp.com/api/partner/getKycStatus/{emailAddress}
 
 - Request Headers: Authorization, Content-Type
 
@@ -74,7 +74,7 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
   - emailAddress: email address of a user
 
   ```http
-  GET https://bdt-defi-partner-api.herokuapp.com/api/partner/getUser/abcd@xyz.com HTTP/1.1
+  GET https://bdt-defi-partner-api.herokuapp.com/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
   Content-Type: application/json
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
@@ -149,7 +149,7 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
 
 - Request Method: GET
 
-- Request URI: https://bdt-defi-partner-api.herokuapp.com/api/gov/getUser/{emailAddress}
+- Request URI: https://bdt-defi-partner-api.herokuapp.com/api/gov/getKycStatus/{emailAddress}
 
 - Request Headers: Authorization, Content-Type
 
@@ -157,7 +157,7 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
   - emailAddress: email address of a user
 
   ```http
-  GET https://bdt-defi-partner-api.herokuapp.com/api/partner/getUser/abcd@xyz.com HTTP/1.1
+  GET https://bdt-defi-partner-api.herokuapp.com/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
   Content-Type: application/json
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
