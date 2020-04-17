@@ -8,7 +8,7 @@ Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) 
 
 ## Creating an API Account
 
-![bdt defi api signup](./signup.png)
+![BDT DEFI API SIGNUP](./signup.png)
 - In the email field, a user should use the email address that has been used in KYC
 
 - In ethereum address field, a user must use an ethereum address that has been used in KYC. Otherwise, an error will be shown and an API account will not be created.
