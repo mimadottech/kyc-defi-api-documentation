@@ -2,53 +2,53 @@
 ![BITDEPOSITARY](./bdt.png)
 
 # Description
-**Note: To use this API, user must be KYC verified on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.com/) as a party on as a government.**
+**Note: To use this API, a user must be KYC verified on [BDT DeFi](https://defi.bitdepositary.network) as a party on as a government.**
 
-Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.com/) as a party or as a government, follow the instructions to register for an API account to get an API key.
+Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) as a party or as a government, follow the instructions to register for an API account to get an API key.
 
 ## Creating an API Account
 
 ![bdt defi api signup](./signup.png)
-- In email field, user should use the email address that has been used in KYC
+- In the email field, a user should use the email address that has been used in KYC
 
-- In ethereum address field, user must use an ethereum address that has been used in KYC. Otherwise error will be shown and API account will not be created.
+- In ethereum address field, a user must use an ethereum address that has been used in KYC. Otherwise, an error will be shown and an API account will not be created.
 
-- Upon providing required and correct details for API account creation user will need to verify email using OTP that will be sent to email address provided by user.
+- Upon providing required and correct details for API account creation a user will need to verify email using OTP that will be sent to an email address provided by a user.
 
-- Once an account is created successfully, user can sign in into dashboard.
+- Once an account is created successfully, a user can sign in into the dashboard.
 
 ## Creating new API Key
 ![bdt defi api dashboard](./createApiKey.png)
 
 - On clicking `Create New API Key` button, once again an OTP verification will happen
-- Upon successfull OTP verification an API key will be generated and will be ready to use for an API calls
+- Upon successful OTP verification, an API key will be generated and will be ready to use for an API calls
 
 ## Making API calls
-- Examples provided on this call is using .http code. You can test api requests with your API Key pasting code in .http file and using [VSCODE](https://code.visualstudio.com/) with [REST CLIENT EXTENSION](https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
+- Examples provided on this call is using .http code. You can test API requests with your API Key pasting code in .http file and using [VSCODE](https://code.visualstudio.com/) with [REST CLIENT EXTENSION](https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
 
-- **Note:** Every api call requires Authorization header with basic authentication scheme.
+- **Note:** Every API call requires an Authorization header with a basic authentication scheme.
 
-- **In basic authentication scheme, base64 string must be provided with combination of username and password. Below is an example of authorization header.**
+- **In basic authentication scheme, base64 string must be provided with a combination of a username and an API Key. Below is an example of authorization header.**
 
   ```http
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
-- Above base64 encoded string is a combination of username and api key. Example: username:SC6WFPS-P4VMBWJ-JWJT6VH-0RD8EAS
+- Above base64 encoded string is a combination of a username and an API key. Example: username:SC6WFPS-P4VMBWJ-JWJT6VH-0RD8EAS
 
 ## Test API Key
 
 - Request Method: GET
 
-- Request URI: https://bdt-defi-partner-api.herokuapp.com/api/dashboard/apiKeyAccessible
+- Request URI: https://defiapi.bitdepositary.network/api/dashboard/apiKeyAccessible
 
 - Request Headers: Authorization
 
   ```http
-  GET https://bdt-defi-partner-api.herokuapp.com/api/dashboard/apiKeyAccessible HTTP/1.1
+  GET https://defiapi.bitdepositary.network/api/dashboard/apiKeyAccessible HTTP/1.1
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
 
-- **Successfull Response:** with valid api key
+- **Successful Response:** with valid api key
   ```json
   { "msg":"ok" }
   ```
@@ -62,11 +62,11 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
   }
   ```
 
-## Get user's KYC status as a partner
+## Get a user's KYC status as a partner
 
 - Request Method: GET
 
-- Request URI: https://bdt-defi-partner-api.herokuapp.com/api/partner/getKycStatus/{emailAddress}
+- Request URI: https://defiapi.bitdepositary.network/api/partner/getKycStatus/{emailAddress}
 
 - Request Headers: Authorization, Content-Type
 
@@ -74,12 +74,12 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
   - emailAddress: email address of a user
 
   ```http
-  GET https://bdt-defi-partner-api.herokuapp.com/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
+  GET https://defiapi.bitdepositary.network/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
   Content-Type: application/json
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
 
-- **Successfull Response:** if user has completed kyc - (status code 200)
+- **Successful Response:** if a user has completed kyc - (status code 200)
   ```json
   {
     "data": {
@@ -90,7 +90,7 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
   }
   ```
 
-- **Successfull Response:** if user has not completed kyc - (status code 200)
+- **Successful Response:** if a user has not completed kyc - (status code 200)
   ```json
   {
     "data": {
@@ -101,7 +101,7 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
   }
   ```
 
-- **Error Response:** if user not found - (status code 403)
+- **Error Response:** if a user not found - (status code 403)
   ```json
   {
     "data": {},
@@ -109,7 +109,7 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
     "errorCode": "EU403"
   }
 
-- **Error Response:** if partner is not allowed access the user detail - (status code 401)
+- **Error Response:** if partner is not allowed access a user detail - (status code 401)
   ```json
   {
     "data": {},
@@ -118,7 +118,7 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
   }
   ```
 
-- **Error Response:** if user is blocked - (status code 422)
+- **Error Response:** if a user is blocked - (status code 422)
   ```json
   {
     "data": {},
@@ -145,11 +145,11 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
   }
   ```
 
-## Get user's KYC status as a government
+## Get a user's KYC status as a government
 
 - Request Method: GET
 
-- Request URI: https://bdt-defi-partner-api.herokuapp.com/api/gov/getKycStatus/{emailAddress}
+- Request URI: https://defiapi.bitdepositary.network/api/gov/getKycStatus/{emailAddress}
 
 - Request Headers: Authorization, Content-Type
 
@@ -157,12 +157,12 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
   - emailAddress: email address of a user
 
   ```http
-  GET https://bdt-defi-partner-api.herokuapp.com/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
+  GET https://defiapi.bitdepositary.network/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
   Content-Type: application/json
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
 
-- **Successfull Response:** if user has completed kyc - (status code 200)
+- **Successful Response:** if a user has completed kyc - (status code 200)
   ```json
   {
     "data": {
@@ -173,7 +173,7 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
   }
   ```
 
-- **Successfull Response:** if user has not completed kyc - (status code 200)
+- **Successful Response:** if a user has not completed kyc - (status code 200)
   ```json
   {
     "data": {
@@ -184,7 +184,7 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
   }
   ```
 
-- **Error Response:** if user not found - (status code 403)
+- **Error Response:** if a user not found - (status code 403)
   ```json
   {
     "data": {},
@@ -192,7 +192,7 @@ Once KYC verification is done on [BDT DeFi](https://bdt-defi-ecd60.firebaseapp.c
     "errorCode": "EU403"
   }
 
-- **Error Response:** if user is blocked - (status code 422)
+- **Error Response:** if a user is blocked - (status code 422)
   ```json
   {
     "data": {},
