@@ -24,7 +24,7 @@ Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) 
 - Upon successful OTP verification, an API key will be generated and will be ready to use for an API calls
 
 ## Making API calls
-- Examples provided on this call is using .http code. You can test API requests with your API Key pasting code in .http file and using [VSCODE](https://code.visualstudio.com/) with [REST CLIENT EXTENSION](https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
+- Examples provided on this documentation is using .http code. You can test API requests with your API Key, pasting code in .http file and using [VSCODE](https://code.visualstudio.com/) with [REST CLIENT EXTENSION](https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
 
 - **Note:** Every API call requires an Authorization header with a basic authentication scheme.
 
