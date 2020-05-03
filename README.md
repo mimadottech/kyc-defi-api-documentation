@@ -7,6 +7,10 @@
 Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) as a party or as a government, follow the instructions to register for an API account to get an API key.
 
 ## Creating an API Account
+- Visit [DeFi Dashboard](https://defidashboard.bitdepositary.network)
+
+![BDT DEFI API SIGNIN](./signin.png)
+- First when you visit dashboard, you will see a signin page. Go to the signup page by clicking on "Signup Here" link shown below the signini button
 
 ![BDT DEFI API SIGNUP](./signup.png)
 - In the email field, a user should use the email address that has been used in KYC
@@ -20,7 +24,7 @@ Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) 
 ## Creating new API Key
 ![bdt defi api dashboard](./createApiKey.png)
 
-- On clicking `Create New API Key` button, once again an OTP verification will happen
+- On clicking `GENERATE NEW` button, once again an OTP verification will happen
 - Upon successful OTP verification, an API key will be generated and will be ready to use for an API calls
 
 ## Making API calls
