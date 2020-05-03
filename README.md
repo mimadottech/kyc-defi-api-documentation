@@ -43,12 +43,12 @@ Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) 
 
 - Request Method: GET
 
-- Request URI: http://defiapi.bitdepositary.network/api/dashboard/apiKeyAccessible
+- Request URI: https://defiapi.bitdepositary.network/api/dashboard/apiKeyAccessible
 
 - Request Headers: Authorization
 
   ```http
-  GET http://defiapi.bitdepositary.network/api/dashboard/apiKeyAccessible HTTP/1.1
+  GET https://defiapi.bitdepositary.network/api/dashboard/apiKeyAccessible HTTP/1.1
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
 
@@ -78,7 +78,7 @@ Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) 
   - emailAddress: email address of a user
 
   ```http
-  GET http://defiapi.bitdepositary.network/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
+  GET https://defiapi.bitdepositary.network/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
   Content-Type: application/json
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
@@ -161,7 +161,7 @@ Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) 
   - emailAddress: email address of a user
 
   ```http
-  GET http://defiapi.bitdepositary.network/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
+  GET https://defiapi.bitdepositary.network/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
   Content-Type: application/json
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
