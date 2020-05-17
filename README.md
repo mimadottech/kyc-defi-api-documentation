@@ -7,12 +7,12 @@
 Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) as a party or as a government, follow the instructions to register for an API account to get an API key.
 
 ## Creating an API Account
-- Visit [DeFi Dashboard](https://defidashboard.bitdepositary.network)
+- Visit [Partner Dashboard](http://partner.kyc-crypto.com)
 
-![BDT DEFI API SIGNIN](./signin.png)
+![PARTNERT API SIGNIN](./signin.png)
 - First when you visit dashboard, you will see a signin page. Go to the signup page by clicking on "Signup Here" link shown below the signini button
 
-![BDT DEFI API SIGNUP](./signup.png)
+![PARTNER API SIGNUP](./signup.png)
 - In the email field, a user should use the email address that has been used in KYC
 
 - In ethereum address field, a user must use an ethereum address that has been used in KYC. Otherwise, an error will be shown and an API account will not be created.
@@ -22,7 +22,7 @@ Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) 
 - Once an account is created successfully, a user can sign in into the dashboard.
 
 ## Creating new API Key
-![bdt defi api dashboard](./createApiKey.png)
+![partner api dashboard](./createApiKey.png)
 
 - On clicking `GENERATE NEW` button, once again an OTP verification will happen
 - Upon successful OTP verification, an API key will be generated and will be ready to use for an API calls
@@ -43,12 +43,12 @@ Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) 
 
 - Request Method: GET
 
-- Request URI: https://defiapi.bitdepositary.network/api/dashboard/apiKeyAccessible
+- Request URI: https://partner.kyc-crypto.com/api/dashboard/apiKeyAccessible
 
 - Request Headers: Authorization
 
   ```http
-  GET https://defiapi.bitdepositary.network/api/dashboard/apiKeyAccessible HTTP/1.1
+  GET https://partner.kyc-crypto.com/api/dashboard/apiKeyAccessible HTTP/1.1
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
 
@@ -78,7 +78,7 @@ Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) 
   - emailAddress: email address of a user
 
   ```http
-  GET https://defiapi.bitdepositary.network/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
+  GET https://partner.kyc-crypto.com/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
   Content-Type: application/json
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
@@ -161,7 +161,7 @@ Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) 
   - emailAddress: email address of a user
 
   ```http
-  GET https://defiapi.bitdepositary.network/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
+  GET https://partner.kyc-crypto.com/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
   Content-Type: application/json
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
