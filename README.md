@@ -2,9 +2,9 @@
 ![BITDEPOSITARY](./bdt.png)
 
 # Description
-**Note: To use this API, a user must be KYC verified on [BDT DeFi](https://defi.bitdepositary.network) as a party on as a government.**
+**Note: To use this API, a user must be KYC verified on [BDT DeFi](https://my.kyc-crypto.com) as a party on as a government.**
 
-Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) as a party or as a government, follow the instructions to register for an API account to get an API key.
+Once KYC verification is done on [BDT DeFi](https://my.kyc-crypto.com) as a party or as a government, follow the instructions to register for an API account to get an API key.
 
 ## Creating an API Account
 - Visit [Partner Dashboard](http://partner.kyc-crypto.com)
@@ -70,7 +70,7 @@ Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) 
 
 - Request Method: GET
 
-- Request URI: http://defiapi.bitdepositary.network/api/partner/getKycStatus/{emailAddress}
+- Request URI: https://api.kyc-crypto.com/api/partner/getKycStatus/{emailAddress}
 
 - Request Headers: Authorization, Content-Type
 
@@ -153,7 +153,7 @@ Once KYC verification is done on [BDT DeFi](https://defi.bitdepositary.network) 
 
 - Request Method: GET
 
-- Request URI: http://defiapi.bitdepositary.network/api/gov/getKycStatus/{emailAddress}
+- Request URI: https://api.kyc-crypto.com/api/gov/getKycStatus/{emailAddress}
 
 - Request Headers: Authorization, Content-Type
 
