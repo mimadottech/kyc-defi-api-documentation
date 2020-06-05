@@ -1,5 +1,5 @@
-# Bitdepositary DeFi API Documentation
-![BITDEPOSITARY](./bdt.png)
+# KYC.Crypto DeFi API Documentation
+![KYC.Crypto](./bdt.png)
 
 # Description
 **Note: To use this API, a user must be KYC verified on [BDT DeFi](https://my.kyc-crypto.com) as a party on as a government.**
