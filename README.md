@@ -2,9 +2,9 @@
 ![KYC.Crypto](./bdt.png)
 
 # Description
-**Note: To use this API, a user must be KYC verified on [BDT DeFi](https://my.kyc-crypto.com) as a party on as a government.**
+**Note: To use this API, a user must be KYC verified on [KYC.Crypto DeFi](https://my.kyc-crypto.com) as a party on as a government.**
 
-Once KYC verification is done on [BDT DeFi](https://my.kyc-crypto.com) as a party or as a government, follow the instructions to register for an API account to get an API key.
+Once KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com) as a party or as a government, follow the instructions to register for an API account to get an API key.
 
 ## Creating an API Account
 - Visit [Partner Dashboard](http://partner.kyc-crypto.com)
