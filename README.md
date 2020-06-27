@@ -2,20 +2,18 @@
 ![KYC.Crypto](./bdt.png)
 
 # Description
-**Note: To use this API, a user must be KYC verified on [KYC.Crypto DeFi](https://my.kyc-crypto.com) as a party on as a government.**
+**Note: To use this API, a user must be KYC verified on [KYC.Crypto DeFi](https://my.kyc-crypto.com) as a party or as a government.**
 
-Once KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com) as a party or as a government, follow the instructions to register for an API account to get an API key.
+Once the KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com) as a party or as a government, follow the instructions to register for an API account to get an API key.
 
 ## Creating an API Account
 - Visit [Partner Dashboard](http://partner.kyc-crypto.com)
 
 ![PARTNERT API SIGNIN](./signin.png)
-- First when you visit dashboard, you will see a signin page. Go to the signup page by clicking on "Signup Here" link shown below the signini button
+- First when you visit dashboard, you will see a signin page. Go to the signup page by clicking on "Signup Here" link shown below the signin button.
 
 ![PARTNER API SIGNUP](./signup.png)
-- In the email field, a user should use the email address that has been used in KYC
-
-- In ethereum address field, a user must use an ethereum address that has been used in KYC. Otherwise, an error will be shown and an API account will not be created.
+- In the email field, a user should use the email address that has been used while KYC verification on KYC.Crypto DeFI portal.
 
 - Upon providing required and correct details for API account creation a user will need to verify email using OTP that will be sent to an email address provided by a user.
 
@@ -87,7 +85,11 @@ Once KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com) as
   ```json
   {
     "data": {
-      "kycDone": true
+      "kycDone": true,
+      "fname": "Rahul",
+      "lname": "Trivedi",
+      "bdate": "1998-01-20",
+      "trxAddress": "T9z1aEGata5FENqQJDLZ3W5SnQyehbs25i"
     },
     "msg": "User has completed KYC",
     "errorCode": null
@@ -135,7 +137,7 @@ Once KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com) as
   ```json
   {
     "data": {},
-    "msg": "The given eth address is not registered as a partner",
+    "msg": "The given tron address is not registered as a partner",
     "errorCode": "EP403"
   }
   ```
@@ -170,7 +172,11 @@ Once KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com) as
   ```json
   {
     "data": {
-      "kycDone": true
+      "kycDone": true,
+      "fname": "Rahul",
+      "lname": "Trivedi",
+      "bdate": "1998-01-20",
+      "trxAddress": "T9z1aEGata5FENqQJDLZ3W5SnQyehbs25i"
     },
     "msg": "User has completed KYC",
     "errorCode": null
@@ -209,7 +215,7 @@ Once KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com) as
   ```json
   {
     "data": {},
-    "msg": "The given eth address is not registered as a partner",
+    "msg": "The given tron address is not registered as a partner",
     "errorCode": "EG403"
   }
   ```
