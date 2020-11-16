@@ -7,7 +7,7 @@
 Once the KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com) as a party or as a government, follow the instructions to register for an API account to get an API key.
 
 ## Creating an API Account
-- Visit [Partner Dashboard](http://partner.kyc-crypto.com)
+- Visit [Partner Dashboard](https://partner.kyc-crypto.com)
 
 ![PARTNERT API SIGNIN](./signin.png)
 - First when you visit dashboard, you will see a signin page. Go to the signup page by clicking on "Signup Here" link shown below the signin button.
@@ -41,12 +41,12 @@ Once the KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com
 
 - Request Method: GET
 
-- Request URI: https://partner.kyc-crypto.com/api/dashboard/apiKeyAccessible
+- Request URI: https://api.kyc-crypto.com/api/dashboard/apiKeyAccessible
 
 - Request Headers: Authorization
 
   ```http
-  GET https://partner.kyc-crypto.com/api/dashboard/apiKeyAccessible HTTP/1.1
+  GET https://api.kyc-crypto.com/api/dashboard/apiKeyAccessible HTTP/1.1
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
 
@@ -76,7 +76,7 @@ Once the KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com
   - emailAddress: email address of a user
 
   ```http
-  GET https://partner.kyc-crypto.com/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
+  GET https://api.kyc-crypto.com/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
   Content-Type: application/json
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
@@ -163,7 +163,7 @@ Once the KYC verification is done on [KYC.Crypto DeFi](https://my.kyc-crypto.com
   - emailAddress: email address of a user
 
   ```http
-  GET https://partner.kyc-crypto.com/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
+  GET https://api.kyc-crypto.com/api/partner/getKycStatus/starktechservice@gmail.com HTTP/1.1
   Content-Type: application/json
   Authorization: Basic dXNlcm5hbWU6U0M2V0ZQUy1QNFZNQldKLUpXSlQ2VkgtMFJEOEVBUw==
   ```
